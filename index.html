@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitacora Tecnología Cabrera</title>
+    <link rel="icon" href="https://www.capouilliez.edu.gt/panel-alumnos/assets/img/brand/capouilliez.svg" type="image/x-icon">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8fbf2;
+            color: #333;
+        }
+
+        header {
+            padding: 40px 20px;
+            background-color: rgb(212, 169, 224);
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            margin: 0;
+            color: rgb(228, 248, 200);
+            font-size: 2.5rem;
+            text-shadow: 0 0 7px #bc13fe, 0 0 15px #bc13fe;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .contenedor-semanas {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .semana {
+            background: white;
+            border-radius: 25px; /* Un poco más redondeado para que se vea más moderno */
+            width: 650px; /* Tamaño máximo para que luzca increíble */
+            padding: 40px; /* Más espacio para que el contenido no toque los bordes */
+            box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+            border-top: 8px solid #9b59b6; /* Línea un poquito más gruesa para que resalte */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+
+        .semana:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(155, 89, 182, 0.15);
+        }
+
+        .semana h4 {
+            color: #6c5ce7;
+            margin-top: 0;
+            font-size: 1.2rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        /* Estilos para multimedia (PDF y Video) */
+        iframe, video {
+            margin-top: 15px;
+            border-radius: 12px;
+            border: 1px solid #ddd;
+            width: 100%;
+            background-color: #000;
+        }
+
+        footer {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: rgb(212, 169, 224);
+            border-top: 1px solid rgba(0,0,0,0.1);
+        }
+
+        footer img {
+            transition: transform 0.3s ease;
+            cursor: pointer;
+            height: 40px;
+        }
+
+        footer img:hover { transform: scale(1.2); }
+
+        @media(max-width:768px){
+            .semana { width: 100%; }
+            footer { flex-direction: column; gap: 15px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bitácora de segunda y tercera unidad</h1>
+    </header>
+
+    <main>
+        <div class="contenedor-semanas">
+            
+            <div class="semana">
+                <h4>Semana 1: Introducción Arduino</h4>
+                <p>Aprendimos que Arduino es una plataforma de electrónica de código abierto basada en hardware y software libre.</p>
+                <iframe src="recursos/Arduino Cabrera.pdf" height="350px"></iframe>
+            </div>
+
+            <div class="semana">
+                <h4>Semana 2: Introducción a Robótica</h4>
+                <p>En esta clase trabajamos con un LED RGB y Tinkercad para entender cómo funcionan los pines digitales y el código de programación. El video contiene la simulación del proyecto en Tinkercard</p>
+                <video controls>
+                    <source src="recursos/Grabación de pantalla 2026-05-12 114826.mp4" type="video/mp4">
+                    Tu navegador no soporta videos.
+                </video>
+            </div>
+
+            <div class="semana">
+                <h4>Semana 3: Próximamente</h4>
+                <p>Espacio reservado para los nuevos aprendizajes de la siguiente sesión.</p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <span>2026 @mfr_hw</span>
+        <img src="https://www.capouilliez.edu.gt/panel-alumnos/assets/img/brand/capouilliez.svg" alt="Logo Colegio">
+    </footer>
+
+</body>
+</html>
